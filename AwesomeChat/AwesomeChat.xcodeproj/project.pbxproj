@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4FA0DC826A92BFC000B078C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FA0DC726A92BFC000B078C /* AppDelegate.swift */; };
+		C4FA0DD226A92BFC000B078C /* AwesomeChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4FA0DD026A92BFC000B078C /* AwesomeChat.xcdatamodeld */; };
+		C4FA0DD426A92BFD000B078C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4FA0DD326A92BFD000B078C /* Assets.xcassets */; };
+		C4FA0DD726A92BFD000B078C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FA0DD526A92BFD000B078C /* LaunchScreen.storyboard */; };
+		C4FA0DE226A92BFD000B078C /* AwesomeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FA0DE126A92BFD000B078C /* AwesomeChatTests.swift */; };
+		C4FA0DED26A92BFD000B078C /* AwesomeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FA0DEC26A92BFD000B078C /* AwesomeChatUITests.swift */; };
+		C4FA0E0026A92E8E000B078C /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FA0DFF26A92E8E000B078C /* CoreData.swift */; };
+		C4FA0E0726A92F7E000B078C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C4FA0E0626A92F7E000B078C /* .swiftlint.yml */; };
+		C4FA0E0A26A93067000B078C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FA0E0826A93067000B078C /* LoginViewController.swift */; };
+		C4FA0E0B26A93067000B078C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4FA0E0926A93067000B078C /* LoginViewController.xib */; };
+		C4FA0E0E26A93075000B078C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FA0E0C26A93075000B078C /* RegisterViewController.swift */; };
+		C4FA0E0F26A93075000B078C /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4FA0E0D26A93075000B078C /* RegisterViewController.xib */; };
+		C4FA0E1226A93083000B078C /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FA0E1026A93083000B078C /* TabbarViewController.swift */; };
+		C4FA0E1326A93083000B078C /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4FA0E1126A93083000B078C /* TabbarViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4FA0DDE26A92BFD000B078C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4FA0DBC26A92BFC000B078C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4FA0DC326A92BFC000B078C;
+			remoteInfo = AwesomeChat;
+		};
+		C4FA0DE926A92BFD000B078C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4FA0DBC26A92BFC000B078C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4FA0DC326A92BFC000B078C;
+			remoteInfo = AwesomeChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4FA0DC426A92BFC000B078C /* AwesomeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4FA0DC726A92BFC000B078C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4FA0DD126A92BFC000B078C /* AwesomeChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AwesomeChat.xcdatamodel; sourceTree = "<group>"; };
+		C4FA0DD326A92BFD000B078C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4FA0DD626A92BFD000B078C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4FA0DD826A92BFD000B078C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4FA0DDD26A92BFD000B078C /* AwesomeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4FA0DE126A92BFD000B078C /* AwesomeChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeChatTests.swift; sourceTree = "<group>"; };
+		C4FA0DE326A92BFD000B078C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4FA0DE826A92BFD000B078C /* AwesomeChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4FA0DEC26A92BFD000B078C /* AwesomeChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeChatUITests.swift; sourceTree = "<group>"; };
+		C4FA0DEE26A92BFE000B078C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4FA0DFF26A92E8E000B078C /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		C4FA0E0626A92F7E000B078C /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C4FA0E0826A93067000B078C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C4FA0E0926A93067000B078C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		C4FA0E0C26A93075000B078C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C4FA0E0D26A93075000B078C /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		C4FA0E1026A93083000B078C /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		C4FA0E1126A93083000B078C /* TabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4FA0DC126A92BFC000B078C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4FA0DDA26A92BFD000B078C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4FA0DE526A92BFD000B078C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4FA0DBB26A92BFC000B078C = {
+			isa = PBXGroup;
+			children = (
+				C4FA0DC626A92BFC000B078C /* AwesomeChat */,
+				C4FA0DE026A92BFD000B078C /* AwesomeChatTests */,
+				C4FA0DEB26A92BFD000B078C /* AwesomeChatUITests */,
+				C4FA0DC526A92BFC000B078C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4FA0DC526A92BFC000B078C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4FA0DC426A92BFC000B078C /* AwesomeChat.app */,
+				C4FA0DDD26A92BFD000B078C /* AwesomeChatTests.xctest */,
+				C4FA0DE826A92BFD000B078C /* AwesomeChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4FA0DC626A92BFC000B078C /* AwesomeChat */ = {
+			isa = PBXGroup;
+			children = (
+				C4FA0DFC26A92E40000B078C /* Controllers */,
+				C4FA0DFB26A92E3A000B078C /* Views */,
+				C4FA0DFA26A92E30000B078C /* Models */,
+				C4FA0DFE26A92E57000B078C /* Resources */,
+				C4FA0DFD26A92E48000B078C /* Helpers */,
+				C4FA0DC726A92BFC000B078C /* AppDelegate.swift */,
+				C4FA0DD326A92BFD000B078C /* Assets.xcassets */,
+				C4FA0DD526A92BFD000B078C /* LaunchScreen.storyboard */,
+				C4FA0E0626A92F7E000B078C /* .swiftlint.yml */,
+				C4FA0DD826A92BFD000B078C /* Info.plist */,
+				C4FA0DD026A92BFC000B078C /* AwesomeChat.xcdatamodeld */,
+			);
+			path = AwesomeChat;
+			sourceTree = "<group>";
+		};
+		C4FA0DE026A92BFD000B078C /* AwesomeChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4FA0DE126A92BFD000B078C /* AwesomeChatTests.swift */,
+				C4FA0DE326A92BFD000B078C /* Info.plist */,
+			);
+			path = AwesomeChatTests;
+			sourceTree = "<group>";
+		};
+		C4FA0DEB26A92BFD000B078C /* AwesomeChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4FA0DEC26A92BFD000B078C /* AwesomeChatUITests.swift */,
+				C4FA0DEE26A92BFE000B078C /* Info.plist */,
+			);
+			path = AwesomeChatUITests;
+			sourceTree = "<group>";
+		};
+		C4FA0DFA26A92E30000B078C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4FA0DFB26A92E3A000B078C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4FA0DFC26A92E40000B078C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4FA0E0326A92F29000B078C /* LoginVC */,
+				C4FA0E0426A92F2F000B078C /* RegisterVC */,
+				C4FA0E0226A92F18000B078C /* TabbarVC */,
+				C4FA0E0126A92EF2000B078C /* MessageScreenVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C4FA0DFD26A92E48000B078C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C4FA0DFF26A92E8E000B078C /* CoreData.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C4FA0DFE26A92E57000B078C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4FA0E0126A92EF2000B078C /* MessageScreenVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MessageScreenVC;
+			sourceTree = "<group>";
+		};
+		C4FA0E0226A92F18000B078C /* TabbarVC */ = {
+			isa = PBXGroup;
+			children = (
+				C4FA0E1026A93083000B078C /* TabbarViewController.swift */,
+				C4FA0E1126A93083000B078C /* TabbarViewController.xib */,
+			);
+			path = TabbarVC;
+			sourceTree = "<group>";
+		};
+		C4FA0E0326A92F29000B078C /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				C4FA0E0826A93067000B078C /* LoginViewController.swift */,
+				C4FA0E0926A93067000B078C /* LoginViewController.xib */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		C4FA0E0426A92F2F000B078C /* RegisterVC */ = {
+			isa = PBXGroup;
+			children = (
+				C4FA0E0C26A93075000B078C /* RegisterViewController.swift */,
+				C4FA0E0D26A93075000B078C /* RegisterViewController.xib */,
+			);
+			path = RegisterVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4FA0DC326A92BFC000B078C /* AwesomeChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4FA0DF126A92BFE000B078C /* Build configuration list for PBXNativeTarget "AwesomeChat" */;
+			buildPhases = (
+				C4FA0DC026A92BFC000B078C /* Sources */,
+				C4FA0DC126A92BFC000B078C /* Frameworks */,
+				C4FA0DC226A92BFC000B078C /* Resources */,
+				C4FA0E0526A92F4B000B078C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AwesomeChat;
+			productName = AwesomeChat;
+			productReference = C4FA0DC426A92BFC000B078C /* AwesomeChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4FA0DDC26A92BFD000B078C /* AwesomeChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4FA0DF426A92BFE000B078C /* Build configuration list for PBXNativeTarget "AwesomeChatTests" */;
+			buildPhases = (
+				C4FA0DD926A92BFD000B078C /* Sources */,
+				C4FA0DDA26A92BFD000B078C /* Frameworks */,
+				C4FA0DDB26A92BFD000B078C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4FA0DDF26A92BFD000B078C /* PBXTargetDependency */,
+			);
+			name = AwesomeChatTests;
+			productName = AwesomeChatTests;
+			productReference = C4FA0DDD26A92BFD000B078C /* AwesomeChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4FA0DE726A92BFD000B078C /* AwesomeChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4FA0DF726A92BFE000B078C /* Build configuration list for PBXNativeTarget "AwesomeChatUITests" */;
+			buildPhases = (
+				C4FA0DE426A92BFD000B078C /* Sources */,
+				C4FA0DE526A92BFD000B078C /* Frameworks */,
+				C4FA0DE626A92BFD000B078C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4FA0DEA26A92BFD000B078C /* PBXTargetDependency */,
+			);
+			name = AwesomeChatUITests;
+			productName = AwesomeChatUITests;
+			productReference = C4FA0DE826A92BFD000B078C /* AwesomeChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4FA0DBC26A92BFC000B078C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C4FA0DC326A92BFC000B078C = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C4FA0DDC26A92BFD000B078C = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C4FA0DC326A92BFC000B078C;
+					};
+					C4FA0DE726A92BFD000B078C = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C4FA0DC326A92BFC000B078C;
+					};
+				};
+			};
+			buildConfigurationList = C4FA0DBF26A92BFC000B078C /* Build configuration list for PBXProject "AwesomeChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4FA0DBB26A92BFC000B078C;
+			productRefGroup = C4FA0DC526A92BFC000B078C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4FA0DC326A92BFC000B078C /* AwesomeChat */,
+				C4FA0DDC26A92BFD000B078C /* AwesomeChatTests */,
+				C4FA0DE726A92BFD000B078C /* AwesomeChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4FA0DC226A92BFC000B078C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FA0E0B26A93067000B078C /* LoginViewController.xib in Resources */,
+				C4FA0E0F26A93075000B078C /* RegisterViewController.xib in Resources */,
+				C4FA0E0726A92F7E000B078C /* .swiftlint.yml in Resources */,
+				C4FA0DD726A92BFD000B078C /* LaunchScreen.storyboard in Resources */,
+				C4FA0E1326A93083000B078C /* TabbarViewController.xib in Resources */,
+				C4FA0DD426A92BFD000B078C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4FA0DDB26A92BFD000B078C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4FA0DE626A92BFD000B078C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4FA0E0526A92F4B000B078C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4FA0DC026A92BFC000B078C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FA0E0A26A93067000B078C /* LoginViewController.swift in Sources */,
+				C4FA0E0E26A93075000B078C /* RegisterViewController.swift in Sources */,
+				C4FA0E1226A93083000B078C /* TabbarViewController.swift in Sources */,
+				C4FA0DD226A92BFC000B078C /* AwesomeChat.xcdatamodeld in Sources */,
+				C4FA0E0026A92E8E000B078C /* CoreData.swift in Sources */,
+				C4FA0DC826A92BFC000B078C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4FA0DD926A92BFD000B078C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FA0DE226A92BFD000B078C /* AwesomeChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4FA0DE426A92BFD000B078C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FA0DED26A92BFD000B078C /* AwesomeChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4FA0DDF26A92BFD000B078C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4FA0DC326A92BFC000B078C /* AwesomeChat */;
+			targetProxy = C4FA0DDE26A92BFD000B078C /* PBXContainerItemProxy */;
+		};
+		C4FA0DEA26A92BFD000B078C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4FA0DC326A92BFC000B078C /* AwesomeChat */;
+			targetProxy = C4FA0DE926A92BFD000B078C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4FA0DD526A92BFD000B078C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4FA0DD626A92BFD000B078C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4FA0DEF26A92BFE000B078C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4FA0DF026A92BFE000B078C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4FA0DF226A92BFE000B078C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AwesomeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amela.AwesomeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4FA0DF326A92BFE000B078C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AwesomeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amela.AwesomeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4FA0DF526A92BFE000B078C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AwesomeChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amela.AwesomeChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeChat.app/AwesomeChat";
+			};
+			name = Debug;
+		};
+		C4FA0DF626A92BFE000B078C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AwesomeChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amela.AwesomeChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeChat.app/AwesomeChat";
+			};
+			name = Release;
+		};
+		C4FA0DF826A92BFE000B078C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AwesomeChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amela.AwesomeChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AwesomeChat;
+			};
+			name = Debug;
+		};
+		C4FA0DF926A92BFE000B078C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AwesomeChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amela.AwesomeChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AwesomeChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4FA0DBF26A92BFC000B078C /* Build configuration list for PBXProject "AwesomeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4FA0DEF26A92BFE000B078C /* Debug */,
+				C4FA0DF026A92BFE000B078C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4FA0DF126A92BFE000B078C /* Build configuration list for PBXNativeTarget "AwesomeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4FA0DF226A92BFE000B078C /* Debug */,
+				C4FA0DF326A92BFE000B078C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4FA0DF426A92BFE000B078C /* Build configuration list for PBXNativeTarget "AwesomeChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4FA0DF526A92BFE000B078C /* Debug */,
+				C4FA0DF626A92BFE000B078C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4FA0DF726A92BFE000B078C /* Build configuration list for PBXNativeTarget "AwesomeChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4FA0DF826A92BFE000B078C /* Debug */,
+				C4FA0DF926A92BFE000B078C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4FA0DD026A92BFC000B078C /* AwesomeChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4FA0DD126A92BFC000B078C /* AwesomeChat.xcdatamodel */,
+			);
+			currentVersion = C4FA0DD126A92BFC000B078C /* AwesomeChat.xcdatamodel */;
+			path = AwesomeChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C4FA0DBC26A92BFC000B078C /* Project object */;
+}
