@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,14 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Thread.sleep(forTimeInterval: 0.1) // Delay Thread
+        FirebaseApp.configure() // Connect to Firebase
         setupView()
         return true
     }
     
     // Setup View
     private func setupView() {
+        let naviTabbar = UINavigationController(rootViewController: TabbarViewController())
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = TabbarViewController()
+        window?.rootViewController = naviTabbar
         window?.makeKeyAndVisible()
     }
 }
