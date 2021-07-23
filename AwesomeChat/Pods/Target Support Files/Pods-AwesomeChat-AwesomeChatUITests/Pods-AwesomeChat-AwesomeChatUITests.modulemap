@@ -1,0 +1,6 @@
+framework module Pods_AwesomeChat_AwesomeChatUITests {
+  umbrella header "Pods-AwesomeChat-AwesomeChatUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
