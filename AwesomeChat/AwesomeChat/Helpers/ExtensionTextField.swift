@@ -9,13 +9,10 @@ import UIKit
 
 extension UITextField {
     func addBottomBorder() {
-        let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0,
-                                  y: self.frame.height - 1,
-                                  width: self.frame.width + 20,
-                                  height: 1)
-        bottomLine.backgroundColor = UIColor.lightGray.cgColor
-        borderStyle = .none
-        layer.addSublayer(bottomLine)
+        self.layer.shadowOffset = CGSize(width: 0, height: 1)
+        self.layer.shadowColor = UIColor.lightGray.cgColor
+        self.layer.shadowRadius = 0
+        self.layer.shadowOpacity = 1
+        self.borderStyle = .none
     }
 }

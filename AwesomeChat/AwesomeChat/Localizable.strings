@@ -1,0 +1,21 @@
+//
+//  Localizable.strings
+//  AwesomeChat
+//
+//  Created by Vũ Linh on 25/07/2021.
+//
+
+// MARK: - Alert
+    // Alert Error
+"Alert.Error.Title.Login" = "Email or Password incorrect!!!";
+"Alert.Error.Message.Login" = "Please check your account!!!";
+
+    // Alert Create Account
+"Alert.Title.CreateAcc" = "Account does not exist!!!";
+"Alert.Message.CreateAcc" = "Do you want create new account";
+"Alert.Create" = "Create";
+"Alert.Cancel" = "Cancel";
+
+    // Alert Success
+"Alert.Title.Login.Success" = "Login Success!";
+"Alert.OK" = "OK";

@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // Setup View
     private func setupView() {
-        let naviTabbar = UINavigationController(rootViewController: TabbarViewController())
+        let naviTabbar = UINavigationController(rootViewController: LoginViewController())
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = naviTabbar
         window?.makeKeyAndVisible()

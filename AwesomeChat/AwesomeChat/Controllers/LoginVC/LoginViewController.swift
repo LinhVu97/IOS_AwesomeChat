@@ -41,14 +41,14 @@ class LoginViewController: UIViewController {
     // MARK: - Setup Text Field
     private func setupTextField() {
         // Email Text
-        let imageEmailTextField = UIImage(named: "email")
+        let imageEmailTextField = UIImage(asset: .email)
         emailText.rightView = UIImageView(image: imageEmailTextField) // Add icon textfield
         emailText.rightViewMode = .always
         emailText.addBottomBorder()
         emailText.delegate = self
         
         // Password Text
-        let imagePassTextField = UIImage(named: "key")
+        let imagePassTextField = UIImage(asset: .key)
         passText.rightView = UIImageView(image: imagePassTextField) // Add icon textfield
         passText.rightViewMode = .always
         passText.addBottomBorder()
@@ -59,7 +59,8 @@ class LoginViewController: UIViewController {
     @IBAction private func loginBtn(_ sender: UIButton) {
         guard let email = emailText.text, !email.isEmpty,
               let password = passText.text, !password.isEmpty, password.count >= 6 else {
-            alert(title: "Email or Password incorrect!!!", message: "Please check your account!!!")
+            alert(title: Localized.alertErrorTitleLogin,
+                  message: Localized.alertErrorMessageLogin)
             emailText.text = ""
             passText.text = ""
             return
@@ -76,6 +77,9 @@ class LoginViewController: UIViewController {
                 strongSelf.createAccount()
                 return
             }
+            
+            // Success
+            strongSelf.alert(title: Localized.success, message: "")
         }
     }
     
@@ -95,13 +99,13 @@ class LoginViewController: UIViewController {
     
     // Show Create Account
     private func createAccount() {
-        let alertCreateAcc = UIAlertController(title: "Account does not exist!!!",
-                                               message: "Do you want create new account",
+        let alertCreateAcc = UIAlertController(title: Localized.alertTitleCreateAcc,
+                                               message: Localized.alertMessageCreateAcc,
                                                preferredStyle: .alert)
-        alertCreateAcc.addAction(UIAlertAction(title: "Create", style: .default, handler: { [weak self] _ in
+        alertCreateAcc.addAction(UIAlertAction(title: Localized.create, style: .default, handler: { [weak self] _ in
             self?.changeVC(vc: self?.registerView ?? UIViewController())
         }))
-        alertCreateAcc.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alertCreateAcc.addAction(UIAlertAction(title: Localized.cancel, style: .cancel, handler: nil))
         present(alertCreateAcc, animated: true, completion: nil)
     }
 }
@@ -111,23 +115,26 @@ extension LoginViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField,
                    shouldChangeCharactersIn range: NSRange,
                    replacementString string: String) -> Bool {
-        let text = (textField.text! as NSString).replacingCharacters(in: range, with: string)
+        guard let textString = textField.text as NSString? else {
+            return false
+        }
+        
+        let text = textString.replacingCharacters(in: range, with: string)
         
         // Enable and Disable Button
+        btnLogin?.isUserInteractionEnabled = !text.isEmpty
         if !text.isEmpty {
-            btnLogin?.isUserInteractionEnabled = true
-            btnLogin.setBackgroundImage(UIImage(named: "ButtonBgActive"), for: .normal)
+            btnLogin.setBackgroundImage(UIImage(asset: .buttonBgActive), for: .normal)
         } else {
-            btnLogin?.isUserInteractionEnabled = false
-            btnLogin.setBackgroundImage(UIImage(named: "ButtonBgDisable"), for: .normal)
+            btnLogin.setBackgroundImage(UIImage(asset: .buttonBgDisable), for: .normal)
         }
         return true
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
-        case self.emailText:
-            self.passText.becomeFirstResponder()
+        case emailText:
+            passText.becomeFirstResponder()
         default:
             break
         }
