@@ -9,7 +9,8 @@ import Foundation
 
 struct Localized {
     // Alert Error
-    static let alertErrorTitleLogin = "Alert.Error.Title.Login".localized
+    static let alertErrorTitleEmail = "Alert.Error.Title.Email".localized
+    static let alertErrorTitlePassword = "Alert.Error.Title.Password".localized
     static let alertErrorMessageLogin = "Alert.Error.Message.Login".localized
     
     // Alert Create Account

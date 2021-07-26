@@ -15,4 +15,10 @@ extension UITextField {
         self.layer.shadowOpacity = 1
         self.borderStyle = .none
     }
+    
+    func iconTextField(image: UIImage) {
+        self.rightView = UIImageView(image: image) // Add icon textfield
+        self.rightViewMode = .always
+        addBottomBorder()
+    }
 }

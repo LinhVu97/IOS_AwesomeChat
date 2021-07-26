@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ForgotViewController: UIViewController {
+class ForgotPassViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

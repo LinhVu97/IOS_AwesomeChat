@@ -13,13 +13,13 @@
 		C44EAB0626AA7AD200B2FD2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C44EAB0526AA7AD200B2FD2B /* GoogleService-Info.plist */; };
 		C44EAB0A26AAA29200B2FD2B /* ExtensionsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAB0926AAA29200B2FD2B /* ExtensionsString.swift */; };
 		C44EAB0C26AAA2C200B2FD2B /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAB0B26AAA2C200B2FD2B /* Localized.swift */; };
-		C45822A426AC1162005344DF /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45822A226AC1162005344DF /* ForgotViewController.swift */; };
-		C45822A526AC1162005344DF /* ForgotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45822A326AC1162005344DF /* ForgotViewController.xib */; };
 		C45822A826AC1170005344DF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45822A626AC1170005344DF /* RegisterViewController.swift */; };
 		C45822A926AC1170005344DF /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45822A726AC1170005344DF /* RegisterViewController.xib */; };
 		C45822AB26AC11C1005344DF /* ExtensionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45822AA26AC11C1005344DF /* ExtensionTextField.swift */; };
 		C46B819526ADAB7000DE255A /* ExtensionsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46B819426ADAB7000DE255A /* ExtensionsImageView.swift */; };
 		C46B819E26ADB0A400DE255A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C46B819D26ADB0A400DE255A /* Localizable.strings */; };
+		C479D07626AE681A00F120BD /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C479D07426AE681A00F120BD /* ForgotPassViewController.swift */; };
+		C479D07726AE681A00F120BD /* ForgotPassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C479D07526AE681A00F120BD /* ForgotPassViewController.xib */; };
 		C4FA0DC826A92BFC000B078C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FA0DC726A92BFC000B078C /* AppDelegate.swift */; };
 		C4FA0DD226A92BFC000B078C /* AwesomeChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4FA0DD026A92BFC000B078C /* AwesomeChat.xcdatamodeld */; };
 		C4FA0DD426A92BFD000B078C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4FA0DD326A92BFD000B078C /* Assets.xcassets */; };
@@ -63,13 +63,13 @@
 		C44EAB0526AA7AD200B2FD2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C44EAB0926AAA29200B2FD2B /* ExtensionsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsString.swift; sourceTree = "<group>"; };
 		C44EAB0B26AAA2C200B2FD2B /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
-		C45822A226AC1162005344DF /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
-		C45822A326AC1162005344DF /* ForgotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotViewController.xib; sourceTree = "<group>"; };
 		C45822A626AC1170005344DF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C45822A726AC1170005344DF /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		C45822AA26AC11C1005344DF /* ExtensionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTextField.swift; sourceTree = "<group>"; };
 		C46B819426ADAB7000DE255A /* ExtensionsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsImageView.swift; sourceTree = "<group>"; };
 		C46B819D26ADB0A400DE255A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C479D07426AE681A00F120BD /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
+		C479D07526AE681A00F120BD /* ForgotPassViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPassViewController.xib; sourceTree = "<group>"; };
 		C4FA0DC426A92BFC000B078C /* AwesomeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FA0DC726A92BFC000B078C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4FA0DD126A92BFC000B078C /* AwesomeChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AwesomeChat.xcdatamodel; sourceTree = "<group>"; };
@@ -153,13 +153,13 @@
 			path = RegisterVC;
 			sourceTree = "<group>";
 		};
-		C45822A126AC1148005344DF /* ForgotVC */ = {
+		C45822A126AC1148005344DF /* ForgotPassVC */ = {
 			isa = PBXGroup;
 			children = (
-				C45822A226AC1162005344DF /* ForgotViewController.swift */,
-				C45822A326AC1162005344DF /* ForgotViewController.xib */,
+				C479D07426AE681A00F120BD /* ForgotPassViewController.swift */,
+				C479D07526AE681A00F120BD /* ForgotPassViewController.xib */,
 			);
-			path = ForgotVC;
+			path = ForgotPassVC;
 			sourceTree = "<group>";
 		};
 		C4FA0DBB26A92BFC000B078C = {
@@ -239,7 +239,7 @@
 		C4FA0DFC26A92E40000B078C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C45822A126AC1148005344DF /* ForgotVC */,
+				C45822A126AC1148005344DF /* ForgotPassVC */,
 				C45822A026AC113B005344DF /* RegisterVC */,
 				C4FA0E0326A92F29000B078C /* LoginVC */,
 				C4FA0E0226A92F18000B078C /* TabbarVC */,
@@ -410,8 +410,8 @@
 				C4FA0DD726A92BFD000B078C /* LaunchScreen.storyboard in Resources */,
 				C46B819E26ADB0A400DE255A /* Localizable.strings in Resources */,
 				C4FA0E1326A93083000B078C /* TabbarViewController.xib in Resources */,
+				C479D07726AE681A00F120BD /* ForgotPassViewController.xib in Resources */,
 				C4FA0DD426A92BFD000B078C /* Assets.xcassets in Resources */,
-				C45822A526AC1162005344DF /* ForgotViewController.xib in Resources */,
 				C45822A926AC1170005344DF /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,12 +594,12 @@
 				C44EAB0C26AAA2C200B2FD2B /* Localized.swift in Sources */,
 				C45822A826AC1170005344DF /* RegisterViewController.swift in Sources */,
 				C4FA0E0A26A93067000B078C /* LoginViewController.swift in Sources */,
-				C45822A426AC1162005344DF /* ForgotViewController.swift in Sources */,
 				C44EAB0426AA7A4D00B2FD2B /* ExtensionsView.swift in Sources */,
 				C44EAB0A26AAA29200B2FD2B /* ExtensionsString.swift in Sources */,
 				C46B819526ADAB7000DE255A /* ExtensionsImageView.swift in Sources */,
 				C4FA0E1226A93083000B078C /* TabbarViewController.swift in Sources */,
 				C4FA0DD226A92BFC000B078C /* AwesomeChat.xcdatamodeld in Sources */,
+				C479D07626AE681A00F120BD /* ForgotPassViewController.swift in Sources */,
 				C45822AB26AC11C1005344DF /* ExtensionTextField.swift in Sources */,
 				C4FA0E0026A92E8E000B078C /* CoreData.swift in Sources */,
 				C4FA0DC826A92BFC000B078C /* AppDelegate.swift in Sources */,

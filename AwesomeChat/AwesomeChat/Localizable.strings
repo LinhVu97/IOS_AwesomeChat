@@ -7,7 +7,8 @@
 
 // MARK: - Alert
     // Alert Error
-"Alert.Error.Title.Login" = "Email or Password incorrect!!!";
+"Alert.Error.Title.Email" = "Email is not valid!!!";
+"Alert.Error.Title.Password" = "Password is not valid!!!";
 "Alert.Error.Message.Login" = "Please check your account!!!";
 
     // Alert Create Account

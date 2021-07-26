@@ -14,7 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak private var btnLogin: UIButton!
     
     let registerView = RegisterViewController()
-    let forgotPassView = ForgotViewController()
+    let forgotPassView = ForgotPassViewController()
+    let tabbarView = TabbarViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,44 +43,53 @@ class LoginViewController: UIViewController {
     private func setupTextField() {
         // Email Text
         let imageEmailTextField = UIImage(asset: .email)
-        emailText.rightView = UIImageView(image: imageEmailTextField) // Add icon textfield
-        emailText.rightViewMode = .always
-        emailText.addBottomBorder()
+        emailText.iconTextField(image: imageEmailTextField ?? UIImage())
         emailText.delegate = self
         
         // Password Text
         let imagePassTextField = UIImage(asset: .key)
-        passText.rightView = UIImageView(image: imagePassTextField) // Add icon textfield
-        passText.rightViewMode = .always
-        passText.addBottomBorder()
+        passText.iconTextField(image: imagePassTextField ?? UIImage())
         passText.delegate = self
     }
     
     // MARK: - Button
     @IBAction private func loginBtn(_ sender: UIButton) {
-        guard let email = emailText.text, !email.isEmpty,
-              let password = passText.text, !password.isEmpty, password.count >= 6 else {
-            alert(title: Localized.alertErrorTitleLogin,
-                  message: Localized.alertErrorMessageLogin)
-            emailText.text = ""
-            passText.text = ""
+        // Validate Email
+        guard let email = emailText.text, email.isValid(.email) else {
+            alert(title: Localized.alertErrorTitleEmail, message: Localized.alertErrorMessageLogin) {
+                emailText.text = ""
+            }
+            return
+        }
+        
+        // Validate Password
+        guard let password = passText.text, password.isValid(.password) else {
+            alert(title: Localized.alertErrorTitlePassword, message: Localized.alertErrorMessageLogin) {
+                passText.text = ""
+            }
             return
         }
         
         // Authentication
         FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
-            guard let strongSelf = self else {
+            guard let self = self else {
                 return
             }
             
             // Error when no account in DB
             guard error == nil else {
-                strongSelf.createAccount()
+                self.alertHandle(title: Localized.alertTitleCreateAcc,
+                                 message: Localized.alertMessageCreateAcc,
+                                 titleAction: Localized.create) {
+                    self.changeVC(vc: self.registerView)
+                }
                 return
             }
             
             // Success
-            strongSelf.alert(title: Localized.success, message: "")
+            self.alert(title: Localized.success, message: "") { [weak self] in
+                self?.changeVC(vc: self?.tabbarView ?? UIViewController())
+            }
         }
     }
     
@@ -95,18 +105,6 @@ class LoginViewController: UIViewController {
         let vc = vc
         navigationController?.pushViewController(vc, animated: true)
         navigationController?.setNavigationBarHidden(false, animated: true)
-    }
-    
-    // Show Create Account
-    private func createAccount() {
-        let alertCreateAcc = UIAlertController(title: Localized.alertTitleCreateAcc,
-                                               message: Localized.alertMessageCreateAcc,
-                                               preferredStyle: .alert)
-        alertCreateAcc.addAction(UIAlertAction(title: Localized.create, style: .default, handler: { [weak self] _ in
-            self?.changeVC(vc: self?.registerView ?? UIViewController())
-        }))
-        alertCreateAcc.addAction(UIAlertAction(title: Localized.cancel, style: .cancel, handler: nil))
-        present(alertCreateAcc, animated: true, completion: nil)
     }
 }
 
