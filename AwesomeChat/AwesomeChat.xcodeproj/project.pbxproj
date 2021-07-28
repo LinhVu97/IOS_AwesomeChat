@@ -306,7 +306,6 @@
 				C4FA0DC226A92BFC000B078C /* Resources */,
 				C4FA0E0526A92F4B000B078C /* ShellScript */,
 				FFA46CC3E694751E0094D606 /* [CP] Embed Pods Frameworks */,
-				322098C08AB355A0C6008C3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,7 +344,6 @@
 				C4FA0DE526A92BFD000B078C /* Frameworks */,
 				C4FA0DE626A92BFD000B078C /* Resources */,
 				54CC1C7F534BDDDF7E676A2F /* [CP] Embed Pods Frameworks */,
-				9C7097E90A8E01993DA3F72C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -455,23 +453,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		322098C08AB355A0C6008C3C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat/Pods-AwesomeChat-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat/Pods-AwesomeChat-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat/Pods-AwesomeChat-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		531A8E26CD012F97658FE703 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,23 +490,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat-AwesomeChatUITests/Pods-AwesomeChat-AwesomeChatUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C7097E90A8E01993DA3F72C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat-AwesomeChatUITests/Pods-AwesomeChat-AwesomeChatUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat-AwesomeChatUITests/Pods-AwesomeChat-AwesomeChatUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat-AwesomeChatUITests/Pods-AwesomeChat-AwesomeChatUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C4FA0E0526A92F4B000B078C /* ShellScript */ = {
