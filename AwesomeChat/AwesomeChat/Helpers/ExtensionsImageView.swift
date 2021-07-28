@@ -10,6 +10,7 @@ import UIKit
 enum AssetIdentifier: String {
     case email = "email"
     case key = "key"
+    case user = "user"
     case buttonBgActive = "ButtonBgActive"
     case buttonBgDisable = "ButtonBgDisable"
 }

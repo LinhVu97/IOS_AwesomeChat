@@ -15,9 +15,9 @@
 		C44EAB0C26AAA2C200B2FD2B /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44EAB0B26AAA2C200B2FD2B /* Localized.swift */; };
 		C45822A426AC1162005344DF /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45822A226AC1162005344DF /* ForgotViewController.swift */; };
 		C45822A526AC1162005344DF /* ForgotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45822A326AC1162005344DF /* ForgotViewController.xib */; };
-		C45822A826AC1170005344DF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45822A626AC1170005344DF /* RegisterViewController.swift */; };
-		C45822A926AC1170005344DF /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45822A726AC1170005344DF /* RegisterViewController.xib */; };
 		C45822AB26AC11C1005344DF /* ExtensionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45822AA26AC11C1005344DF /* ExtensionTextField.swift */; };
+		C45B080226AED1250034C414 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B080026AED1250034C414 /* RegisterViewController.swift */; };
+		C45B080326AED1250034C414 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45B080126AED1250034C414 /* RegisterViewController.xib */; };
 		C46B819526ADAB7000DE255A /* ExtensionsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46B819426ADAB7000DE255A /* ExtensionsImageView.swift */; };
 		C46B819E26ADB0A400DE255A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C46B819D26ADB0A400DE255A /* Localizable.strings */; };
 		C4FA0DC826A92BFC000B078C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FA0DC726A92BFC000B078C /* AppDelegate.swift */; };
@@ -65,9 +65,9 @@
 		C44EAB0B26AAA2C200B2FD2B /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		C45822A226AC1162005344DF /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
 		C45822A326AC1162005344DF /* ForgotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotViewController.xib; sourceTree = "<group>"; };
-		C45822A626AC1170005344DF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		C45822A726AC1170005344DF /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		C45822AA26AC11C1005344DF /* ExtensionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTextField.swift; sourceTree = "<group>"; };
+		C45B080026AED1250034C414 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C45B080126AED1250034C414 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		C46B819426ADAB7000DE255A /* ExtensionsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsImageView.swift; sourceTree = "<group>"; };
 		C46B819D26ADB0A400DE255A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C4FA0DC426A92BFC000B078C /* AwesomeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,8 +147,8 @@
 		C45822A026AC113B005344DF /* RegisterVC */ = {
 			isa = PBXGroup;
 			children = (
-				C45822A626AC1170005344DF /* RegisterViewController.swift */,
-				C45822A726AC1170005344DF /* RegisterViewController.xib */,
+				C45B080026AED1250034C414 /* RegisterViewController.swift */,
+				C45B080126AED1250034C414 /* RegisterViewController.xib */,
 			);
 			path = RegisterVC;
 			sourceTree = "<group>";
@@ -306,7 +306,6 @@
 				C4FA0DC226A92BFC000B078C /* Resources */,
 				C4FA0E0526A92F4B000B078C /* ShellScript */,
 				FFA46CC3E694751E0094D606 /* [CP] Embed Pods Frameworks */,
-				322098C08AB355A0C6008C3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,7 +344,6 @@
 				C4FA0DE526A92BFD000B078C /* Frameworks */,
 				C4FA0DE626A92BFD000B078C /* Resources */,
 				54CC1C7F534BDDDF7E676A2F /* [CP] Embed Pods Frameworks */,
-				9C7097E90A8E01993DA3F72C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -405,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4FA0E0B26A93067000B078C /* LoginViewController.xib in Resources */,
+				C45B080326AED1250034C414 /* RegisterViewController.xib in Resources */,
 				C44EAB0626AA7AD200B2FD2B /* GoogleService-Info.plist in Resources */,
 				C4FA0E0726A92F7E000B078C /* .swiftlint.yml in Resources */,
 				C4FA0DD726A92BFD000B078C /* LaunchScreen.storyboard in Resources */,
@@ -412,7 +411,6 @@
 				C4FA0E1326A93083000B078C /* TabbarViewController.xib in Resources */,
 				C4FA0DD426A92BFD000B078C /* Assets.xcassets in Resources */,
 				C45822A526AC1162005344DF /* ForgotViewController.xib in Resources */,
-				C45822A926AC1170005344DF /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,23 +453,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		322098C08AB355A0C6008C3C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat/Pods-AwesomeChat-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat/Pods-AwesomeChat-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat/Pods-AwesomeChat-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		531A8E26CD012F97658FE703 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,23 +490,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat-AwesomeChatUITests/Pods-AwesomeChat-AwesomeChatUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C7097E90A8E01993DA3F72C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat-AwesomeChatUITests/Pods-AwesomeChat-AwesomeChatUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat-AwesomeChatUITests/Pods-AwesomeChat-AwesomeChatUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeChat-AwesomeChatUITests/Pods-AwesomeChat-AwesomeChatUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C4FA0E0526A92F4B000B078C /* ShellScript */ = {
@@ -592,7 +556,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C44EAB0C26AAA2C200B2FD2B /* Localized.swift in Sources */,
-				C45822A826AC1170005344DF /* RegisterViewController.swift in Sources */,
 				C4FA0E0A26A93067000B078C /* LoginViewController.swift in Sources */,
 				C45822A426AC1162005344DF /* ForgotViewController.swift in Sources */,
 				C44EAB0426AA7A4D00B2FD2B /* ExtensionsView.swift in Sources */,
@@ -601,6 +564,7 @@
 				C4FA0E1226A93083000B078C /* TabbarViewController.swift in Sources */,
 				C4FA0DD226A92BFC000B078C /* AwesomeChat.xcdatamodeld in Sources */,
 				C45822AB26AC11C1005344DF /* ExtensionTextField.swift in Sources */,
+				C45B080226AED1250034C414 /* RegisterViewController.swift in Sources */,
 				C4FA0E0026A92E8E000B078C /* CoreData.swift in Sources */,
 				C4FA0DC826A92BFC000B078C /* AppDelegate.swift in Sources */,
 			);
