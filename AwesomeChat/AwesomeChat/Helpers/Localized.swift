@@ -8,10 +8,13 @@
 import Foundation
 
 struct Localized {
-    // Alert Error
+    // Alert Login Error
     static let alertErrorTitleEmail = "Alert.Error.Title.Email".localized
     static let alertErrorTitlePassword = "Alert.Error.Title.Password".localized
     static let alertErrorMessageLogin = "Alert.Error.Message.Login".localized
+    
+    // Alert Register Error
+    static let failToRegister = "Alert.Error.Message.Register".localized
     
     // Alert Create Account
     static let alertTitleCreateAcc = "Alert.Title.CreateAcc".localized
@@ -21,5 +24,6 @@ struct Localized {
     
     // Alert Success
     static let success = "Alert.Title.Login.Success".localized
+    static let successRegister = "Alert.Title.Register.Success".localized
     static let ok = "OK".localized
 }
