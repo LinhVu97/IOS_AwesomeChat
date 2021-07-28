@@ -1,0 +1,3 @@
+// Alert
+"Alert.Error.Title.Login" = "Email or Password incorrect!!!";
+"Alert.Error.Message.Login" = "Please check your account!!!";
